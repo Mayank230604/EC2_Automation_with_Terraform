@@ -36,6 +36,7 @@ aws configure
 mkdir terraform-ec2 && cd terraform-ec2
 touch main.tf
 ```
+![image](https://github.com/user-attachments/assets/d29ed685-2c4c-4397-9713-1220c6b9aefe)
 
 ---
 
@@ -57,6 +58,7 @@ resource "aws_instance" "example" {
   }
 }
 ```
+![image](https://github.com/user-attachments/assets/4def83a1-9dad-48ee-bc65-ea9aa3e899fd)
 
 ---
 
@@ -67,6 +69,7 @@ Run the following command to initialize Terraform:
 ```bash
 terraform init
 ```
+![image](https://github.com/user-attachments/assets/4c04a20d-a71a-4368-b6e1-139673e8ff27)
 
 ---
 
