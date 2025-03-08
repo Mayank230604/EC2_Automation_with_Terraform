@@ -46,19 +46,21 @@ touch main.tf
 
 ```hcl
 provider "aws" {
-  region = "us-east-1"  # Modify as needed
+    profile = "default"
+    region  = "eu-west-2"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux AMI (Check for your region)
-  instance_type = "t2.micro"
+resource "aws_instance" "UGO_Server" {
+    ami           = "ami-0cbf43fd299e3a464"
+    instance_type = "t2.micro"
 
-  tags = {
-    Name = "MyTerraformInstance"
-  }
+    tags = {
+        Name = "MyNCAAInstance"
+    }
 }
 ```
-![image](https://github.com/user-attachments/assets/4def83a1-9dad-48ee-bc65-ea9aa3e899fd)
+![image](https://github.com/user-attachments/assets/398be90b-7c90-456a-8042-605dffae01ac)
+
 
 ---
 
@@ -81,6 +83,7 @@ terraform init
 terraform validate
 terraform plan
 ```
+![image](https://github.com/user-attachments/assets/c1209480-64fb-4aa2-9591-21c7e25cb373)
 
 ---
 
