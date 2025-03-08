@@ -94,6 +94,8 @@ terraform plan
 ```bash
 terraform apply -auto-approve
 ```
+![image](https://github.com/user-attachments/assets/808936ce-36b2-475a-b921-f7252078fee1)
+![image](https://github.com/user-attachments/assets/5c1a2928-999e-4786-bd84-0bd02bf9ab57)
 
 ---
 
@@ -104,8 +106,11 @@ terraform apply -auto-approve
 ```bash
 aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,State.Name,PublicIpAddress]' --output table
 ```
+![image](https://github.com/user-attachments/assets/9b259335-5126-403d-a6ac-fc7bc906fa53)
 
 - Alternatively, check the instance in the AWS Console.
+
+![image](https://github.com/user-attachments/assets/72817dae-48e7-4097-86ff-2c65ad26aab9)
 
 ---
 
@@ -116,6 +121,8 @@ aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,Sta
 ```bash
 terraform destroy -auto-approve
 ```
+![image](https://github.com/user-attachments/assets/241ee758-0aaf-4aad-b311-1527999d7e77)
+![image](https://github.com/user-attachments/assets/b9885ac3-a076-45f5-b140-4c2a44248442)
 
 ---
 
